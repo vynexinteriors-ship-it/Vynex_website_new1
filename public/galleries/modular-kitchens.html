@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modular Kitchens Gallery - Vynex Interiors</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231B2838' width='100' height='100'/%3E%3Cpath fill='%23B87350' d='M50 25L75 45H60V65H40V45H25L50 25Z'/%3E%3Crect fill='%23B87350' x='35' y='65' width='30' height='10' rx='2'/%3E%3Ccircle fill='%23D4936F' cx='50' cy='35' r='3'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+  </head>
+  <body class="gallery-page">
+    <header class="header">
+      <div class="container header-inner">
+        <div class="logo-wrap">
+          <a href="/" class="logo-text">Vynex</a>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="/#design-gallery">Design Gallery</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/#cities">Cities</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#referral">Refer &amp; Earn</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="/#pricing" class="btn btn-copper-primary">Get Free Interior Estimate</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </header>
+
+    <section class="breadcrumb">
+      <div class="container">
+        <nav>
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#design-gallery">Gallery</a>
+          <span>/</span>
+          <span>Modular Kitchens</span>
+        </nav>
+      </div>
+    </section>
+
+    <section class="gallery-header">
+      <div class="container">
+        <h1>Modular Kitchens</h1>
+        <p>Functional, elegant kitchens with premium finishes and smart storage. Spaces designed for modern living and culinary creativity.</p>
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="modern">Modern</button>
+          <button class="filter-btn" data-filter="contemporary">Contemporary</button>
+          <button class="filter-btn" data-filter="luxury">Luxury</button>
+          <button class="filter-btn" data-filter="minimalist">Minimalist</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item" data-category="modern">
+            <img
+              src="https://images.pexels.com/photos/3735411/pexels-photo-3735411.jpeg"
+              alt="Modern Modular Kitchen with Island"
+              class="gallery-item-image"
+            />
+            <div class="gallery-item-info">
+              <h3>Modern Modular Kitchen with Island</h3>
+              <p>Sleek design with integrated appliances, smart storage, and a central island for functionality and style.</p>
+              <div class="gallery-item-tags">
+                <span class="tag">Modern</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="contemporary">
+            <img
+              src="https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg"
+              alt="Contemporary Kitchen with Neutral Palette"
+              class="gallery-item-image"
+            />
+            <div class="gallery-item-info">
+              <h3>Contemporary Kitchen with Neutral Palette</h3>
+              <p>Stylish space with quality finishes, open shelving, and neutral tones for timeless elegance.</p>
+              <div class="gallery-item-tags">
+                <span class="tag">Contemporary</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="luxury">
+            <img
+              src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg"
+              alt="Luxury Kitchen with Premium Appliances"
+              class="gallery-item-image"
+            />
+            <div class="gallery-item-info">
+              <h3>Luxury Kitchen with Premium Appliances</h3>
+              <p>High-end finishes with integrated luxury appliances, custom cabinetry, and sophisticated design elements.</p>
+              <div class="gallery-item-tags">
+                <span class="tag">Luxury</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="minimalist">
+            <img
+              src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg"
+              alt="Minimalist Kitchen Design"
+              class="gallery-item-image"
+            />
+            <div class="gallery-item-info">
+              <h3>Minimalist Kitchen Design</h3>
+              <p>Clean lines with hidden storage, essential elements only, and efficient space utilization.</p>
+              <div class="gallery-item-tags">
+                <span class="tag">Minimalist</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="modern luxury">
+            <img
+              src="https://images.pexels.com/photos/2356059/pexels-photo-2356059.jpeg"
+              alt="Modern Luxury Kitchen System"
+              class="gallery-item-image"
+            />
+            <div class="gallery-item-info">
+              <h3>Modern Luxury Kitchen System</h3>
+              <p>Contemporary design with premium materials, smart features, and integrated technology for the modern home.</p>
+              <div class="gallery-item-tags">
+                <span class="tag">Modern</span>
+                <span class="tag">Luxury</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="contemporary luxury">
+            <img
+              src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg"
+              alt="Contemporary Luxury Kitchen"
+              class="gallery-item-image"
+            />
+            <div class="gallery-item-info">
+              <h3>Contemporary Luxury Kitchen</h3>
+              <p>Elegant space with premium finishes, integrated appliances, and refined aesthetic for discerning homeowners.</p>
+              <div class="gallery-item-tags">
+                <span class="tag">Contemporary</span>
+                <span class="tag">Luxury</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="modern">
+            <img
+              src="https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg"
+              alt="Modern Open Plan Kitchen"
+              class="gallery-item-image"
+            />
+            <div class="gallery-item-info">
+              <h3>Modern Open Plan Kitchen</h3>
+              <p>Seamless flow between kitchen and living areas with modern cabinetry and efficient layout.</p>
+              <div class="gallery-item-tags">
+                <span class="tag">Modern</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="luxury">
+            <img
+              src="https://images.pexels.com/photos/1648768/pexels-photo-1648768.jpeg"
+              alt="Luxury Chef's Kitchen"
+              class="gallery-item-image"
+            />
+            <div class="gallery-item-info">
+              <h3>Luxury Chef's Kitchen</h3>
+              <p>Premium culinary space with professional-grade appliances, custom storage, and sophisticated design.</p>
+              <div class="gallery-item-tags">
+                <span class="tag">Luxury</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-cta">
+      <div class="container">
+        <h2>Design Your Dream Kitchen</h2>
+        <p>Create a functional and beautiful kitchen with Vynex modular solutions tailored to your lifestyle.</p>
+        <a href="/#hero" class="btn-copper">Book Free Design Consultation</a>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">×</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-image" id="lightboxImage" />
+      </div>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h3>About</h3>
+          <ul>
+            <li><a href="/#">About Vynex</a></li>
+            <li><a href="/#">Our Story</a></li>
+            <li><a href="/#">Careers</a></li>
+            <li><a href="/#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="/#services">Full Home Interiors</a></li>
+            <li><a href="/#services">Modular Kitchens</a></li>
+            <li><a href="/#services">Wardrobes</a></li>
+            <li><a href="/#services">Kitchen Design</a></li>
+            <li><a href="/#services">Bedroom Interiors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#blog">Design Guides</a></li>
+            <li><a href="/#faq">FAQs</a></li>
+            <li><a href="/#">Portfolio</a></li>
+            <li><a href="/#">Case Studies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Customer Support</h3>
+          <ul>
+            <li><a href="/#trust">Warranty</a></li>
+            <li><a href="/#process">Installation</a></li>
+            <li><a href="/#">Help Center</a></li>
+            <li><a href="/#">Book a Visit</a></li>
+            <li><a href="/#">Track Your Project</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li>Phone: +91-98765-43210</li>
+            <li>Email: hello@vynex.in</li>
+            <li>Hours: Mon-Sat, 9 AM - 7 PM</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram" title="Instagram">IG</a>
+            <a href="#" aria-label="Facebook" title="Facebook">FB</a>
+            <a href="#" aria-label="Pinterest" title="Pinterest">PI</a>
+            <a href="#" aria-label="LinkedIn" title="LinkedIn">IN</a>
+            <a href="#" aria-label="YouTube" title="YouTube">YT</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Vynex Interiors. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/gallery.js"></script>
+  </body>
+</html>

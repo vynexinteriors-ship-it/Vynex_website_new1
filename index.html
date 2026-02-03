@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vynex Interiors – Luxury Home Interiors</title>
+
+  <link rel="icon" href="public/logo-vynex.svg" type="svg"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="public/css/styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <div class="logo-text">Vynex</div>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#design-gallery">Design Gallery</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#cities">Cities</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#referral">Refer &amp; Earn</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#pricing" class="btn btn-copper-primary">
+        Get Free Interior Estimate
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Luxury Interiors. Designed For Inspired Living.</h1>
+          <p class="hero-subtext">
+            Premium bespoke interiors delivered with precision, comfort, and seamless execution by Vynex.
+          </p>
+          <p class="hero-support">
+            From first sketch to final styling, Vynex creates turnkey luxury interiors that reflect your lifestyle and elevate everyday living.
+          </p>
+          <p class="hero-trust">
+            Turnkey luxury interiors across major Indian cities.
+          </p>
+        </div>
+
+        <div class="hero-form-card">
+          <h2>Book Design Consultation</h2>
+          <form class="lead-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Enter your name" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="Enter your phone" required />
+            </label>
+            <label>
+              City
+              <input type="text" name="city" placeholder="Enter your city" required />
+            </label>
+            <button type="submit" class="btn btn-copper">
+              Book Design Consultation
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN SHOWCASE -->
+    <section class="section section-light" id="design-gallery">
+      <div class="container">
+        <header class="section-header">
+          <h2>Explore Our Interior Designs</h2>
+          <p>
+            Discover living rooms, kitchens, bedrooms, and more, crafted with rich textures and considered details.
+          </p>
+        </header>
+
+        <div class="showcase-grid">
+          <article class="showcase-card">
+            <div class="showcase-image showcase-living-room">
+              <img src="https://i.pinimg.com/1200x/2b/76/cc/2b76cc89c6c9553288e83f48495a5357.jpg" alt="Living Rooms" class="showcase-img">
+            </div>
+            <div class="showcase-overlay">
+              <h3>Living Rooms</h3>
+              <p>Layered, welcoming spaces for everyday living and entertaining.</p>
+              <a href="public/galleries/living-rooms.html" class="showcase-link">See All</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-image showcase-kitchen">
+              <img src="https://i.pinimg.com/1200x/df/e4/55/dfe4558fc7987b8e3290e26cc1dacf5a.jpg" alt="Modular Kitchen" class="showcase-img">
+            </div>
+            <div class="showcase-overlay">
+              <h3>Modular Kitchens</h3>
+              <p>Functional, elegant kitchens with premium finishes and storage.</p>
+              <a href="public/galleries/modular-kitchens.html" class="showcase-link">See All</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-image showcase-wardrobe">
+              <img src="https://i.pinimg.com/736x/2b/73/3a/2b733ac5e25b60689510cfa0be452c3f.jpg" alt="Wardrobe" class="showcase-img">
+            </div>
+            <div class="showcase-overlay">
+              <h3>Wardrobes</h3>
+              <p>Smart, bespoke wardrobes tailored to the way you live.</p>
+              <a href="public/galleries/wardrobes.html" class="showcase-link">See All</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-image showcase-bedroom">
+              <img src="https://i.pinimg.com/1200x/fd/7f/d0/fd7fd01b37edbe508bab6cb984f87b60.jpg" alt="Bedrooms" class="showcase-img">
+            </div>
+            <div class="showcase-overlay">
+              <h3>Bedrooms</h3>
+              <p>Serene, restful spaces designed for comfort and calm.</p>
+              <a href="public/galleries/bedrooms.html" class="showcase-link">See All</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-image showcase-tv-unit">
+              <img src="https://i.pinimg.com/736x/9f/3e/ce/9f3eceb4ed4505a4b64a57f1450e3e15.jpg" alt="TV Units" class="showcase-img">
+            </div>
+            <div class="showcase-overlay">
+              <h3>TV Units</h3>
+              <p>Clean, integrated media walls with hidden storage.</p>
+              <a href="public/galleries/tv-units.html" class="showcase-link">See All</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-image showcase-kids-room">
+              <img src="https://i.pinimg.com/1200x/ed/8a/c1/ed8ac1b4051d1007140f8df969a71c28.jpg" alt="Kids Rooms" class="showcase-img">
+            </div>
+            <div class="showcase-overlay">
+              <h3>Kids Rooms</h3>
+              <p>Playful, safe rooms that adapt as your children grow.</p>
+              <a href="public/galleries/kids-rooms.html" class="showcase-link">See All</a>
+            </div>
+          </article>
+        </div>
+
+        <header class="section-header luxury-subheader">
+          <h2>The Vynex Portfolio</h2>
+          <p>
+            Spaces, thoughtfully crafted with a balance of proportion, light, and texture.
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <!-- PRICING / TAILORED INTERIOR ESTIMATES -->
+    <section id="pricing" class="pricing-section">
+      <div class="pricing-header">
+        <h2>Tailored Interior Estimates</h2>
+        <p>Begin with an estimate aligned to your space, style, and investment range.</p>
+      </div>
+
+      <div class="pricing-track">
+        <button class="scroll-btn prev" aria-label="Scroll left">‹</button>
+
+        <div class="estimate-scroller">
+          <!-- Full Home Interiors -->
+          <article class="estimate-card">
+            <h3>Full Home Interiors</h3>
+            <p>
+              Turnkey luxury interiors for your entire home, from living and bedrooms
+              to storage and lighting.
+            </p>
+            <a href="#contact" class="btn btn-copper">Get Interior Estimate</a>
+          </article>
+
+          <!-- Living Room -->
+          <article class="estimate-card">
+            <h3>Living Room</h3>
+            <p>
+              Layered, welcoming spaces for everyday living and entertaining.
+            </p>
+            <a href="#contact" class="btn btn-copper">Get Interior Estimate</a>
+          </article>
+
+          <!-- Modular Kitchens -->
+          <article class="estimate-card">
+            <h3>Modular Kitchens</h3>
+            <p>
+              Premium modular kitchens with bespoke layouts, finishes, and
+              integrated appliances.
+            </p>
+            <a href="#contact" class="btn btn-copper">Get Interior Estimate</a>
+          </article>
+
+          <!-- Wardrobes -->
+          <article class="estimate-card">
+            <h3>Wardrobes</h3>
+            <p>Smart, bespoke wardrobes tailored to the way you live.</p>
+            <a href="#contact" class="btn btn-copper">Get Interior Estimate</a>
+          </article>
+
+          <!-- Bedrooms -->
+          <article class="estimate-card">
+            <h3>Bedrooms</h3>
+            <p>Serene, restful spaces designed for comfort and calm.</p>
+            <a href="#contact" class="btn btn-copper">Get Interior Estimate</a>
+          </article>
+
+          <!-- TV Units -->
+          <article class="estimate-card">
+            <h3>TV Units</h3>
+            <p>Clean, integrated media walls with hidden storage.</p>
+            <a href="#contact" class="btn btn-copper">Get Interior Estimate</a>
+          </article>
+
+          <!-- Kids Rooms -->
+          <article class="estimate-card">
+            <h3>Kids Rooms</h3>
+            <p>Playful, safe rooms that adapt as your children grow.</p>
+            <a href="#contact" class="btn btn-copper">Get Interior Estimate</a>
+          </article>
+        </div>
+
+        <button class="scroll-btn next" aria-label="Scroll right">›</button>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section-light" id="process">
+      <div class="container">
+        <header class="section-header">
+          <h2>The Vynex Experience</h2>
+          <p>
+            A clear, guided journey from initial conversation to turnkey handover.
+          </p>
+        </header>
+
+        <ol class="process-steps">
+          <li>
+            <div class="process-number">01</div>
+            <h3>Consultation</h3>
+            <p>Understand your lifestyle, architecture, and aspirations for your home.</p>
+          </li>
+          <li>
+            <div class="process-number">02</div>
+            <h3>Design Finalization</h3>
+            <p>Refine layouts, visuals, and details until every element feels right.</p>
+          </li>
+          <li>
+            <div class="process-number">03</div>
+            <h3>Material Selection</h3>
+            <p>Curate finishes, fixtures, and textures with your dedicated designer.</p>
+          </li>
+          <li>
+            <div class="process-number">04</div>
+            <h3>Production</h3>
+            <p>Precision manufacturing of modular and bespoke components.</p>
+          </li>
+          <li>
+            <div class="process-number">05</div>
+            <h3>Installation</h3>
+            <p>Coordinated on-site execution and quality checks at every stage.</p>
+          </li>
+          <li>
+            <div class="process-number">06</div>
+            <h3>Handover</h3>
+            <p>Final styling, walkthrough, and a home ready to move into.</p>
+          </li>
+        </ol>
+
+        <div class="section-cta">
+          <a href="#hero" class="btn btn-copper">Book Free Design Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERRAL -->
+    <section class="section referral" id="referral">
+      <div class="container referral-inner">
+        <div class="referral-content">
+          <h2>Refer. Reward. Repeat.</h2>
+          <p>
+            Share Vynex with friends and family and earn exclusive rewards for every successful referral.
+          </p>
+        </div>
+        <button class="btn btn-copper">Refer &amp; Earn Exclusive Rewards</button>
+      </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="section section-light" id="services">
+      <div class="container">
+        <header class="section-header">
+          <h2>End-to-End Interior Solutions</h2>
+          <p>
+            Every layer of your home, planned and executed by the Vynex team.
+          </p>
+        </header>
+
+        <div class="services-grid">
+          <div class="service-item">
+            <span class="service-icon">🍽</span>
+            <h3>Modular Kitchen</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">👚</span>
+            <h3>Wardrobe</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">🍷</span>
+            <h3>Crockery Units</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">💡</span>
+            <h3>False Ceiling</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">🧱</span>
+            <h3>Wallpaper</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">🎨</span>
+            <h3>Wall Paint</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">📦</span>
+            <h3>Storage</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">🛁</span>
+            <h3>Bathroom</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">📚</span>
+            <h3>Study Tables</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">🚪</span>
+            <h3>Foyer Units</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">🛋</span>
+            <h3>Bespoke Furniture</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">🧸</span>
+            <h3>Kids Bedroom</h3>
+          </div>
+          <div class="service-item">
+            <span class="service-icon">🕯</span>
+            <h3>Pooja Unit</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-navy" id="faq">
+      <div class="container">
+        <header class="section-header section-header-light">
+          <h2>Frequently Asked Questions</h2>
+        </header>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              How does the Vynex design process work?
+            </button>
+            <div class="accordion-body">
+              <p>
+                The journey begins with a consultation, followed by design development, material selection, production, installation, and final handover with quality checks.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              What is the typical timeline for a project?
+            </button>
+            <div class="accordion-body">
+              <p>
+                Timelines depend on scope, but once designs are finalized, Vynex works to deliver within clearly defined, agreed schedules.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Can I customize designs and materials?
+            </button>
+            <div class="accordion-body">
+              <p>
+                Yes. Designers collaborate with you on layouts, finishes, hardware, and more to match your preferences and budget.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Do you offer site visits or showroom experiences?
+            </button>
+            <div class="accordion-body">
+              <p>
+                Site visits are offered for measurements and coordination, and where available, experience centers help you explore materials in person.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              How are pricing and estimates calculated?
+            </button>
+            <div class="accordion-body">
+              <p>
+                Estimates are based on area, scope, materials, and complexity, and are shared transparently before you confirm your order.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              What kind of warranty and support is provided?
+            </button>
+            <div class="accordion-body">
+              <p>
+                Vynex offers comprehensive warranty coverage on core interior products, along with dedicated post-installation support to ensure your home remains beautiful and functional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTATION CTA -->
+    <section class="section consultation-cta" id="consultation">
+      <div class="container consultation-inner">
+        <div class="consultation-text">
+          <h2>Still Unsure About Materials, Layouts or Budget?</h2>
+          <p>
+            Meet a Vynex designer for a tailored consultation on styles, finishes, and project investment.
+          </p>
+          <button class="btn btn-copper">Meet a Vynex Designer</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BADGES -->
+    <section class="section section-light" id="trust">
+      <div class="container">
+        <header class="section-header">
+          <h2>Why Homeowners Choose Vynex</h2>
+        </header>
+
+        <div class="trust-grid">
+          <div class="trust-item">
+            <span class="trust-icon">✔</span>
+            <h3>10-Year Warranty</h3>
+            <p>Confidence in core products backed by long-term coverage.</p>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✔</span>
+            <h3>45-Day Delivery Promise</h3>
+            <p>Structured project milestones and clear timelines.</p>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✔</span>
+            <h3>200+ Premium Designers</h3>
+            <p>Specialists in high-end residential and luxury interiors.</p>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✔</span>
+            <h3>Dedicated Post-Installation Support</h3>
+            <p>Continued assistance to keep your home performing beautifully.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CITIES WE SERVE -->
+    <section class="section section-navy" id="cities">
+      <div class="container">
+        <header class="section-header section-header-light">
+          <h2>Cities We Serve</h2>
+          <p>
+            Vynex partners with homeowners across major Indian metros and emerging cities.
+          </p>
+        </header>
+
+        <div class="cities-grid">
+          <div class="city-item">
+            <h3>Mumbai</h3>
+            <p>Premium interiors across South Mumbai, Andheri, and Powai.</p>
+          </div>
+          <div class="city-item">
+            <h3>Bengaluru</h3>
+            <p>Luxury homes in Whitefield, Indiranagar, and Koramangala.</p>
+          </div>
+          <div class="city-item">
+            <h3>Delhi NCR</h3>
+            <p>Turnkey interiors in Gurgaon, Noida, and Greater Noida.</p>
+          </div>
+          <div class="city-item">
+            <h3>Hyderabad</h3>
+            <p>Bespoke designs in Gachibowli, Jubilee Hills, and Banjara Hills.</p>
+          </div>
+          <div class="city-item">
+            <h3>Chennai</h3>
+            <p>Elegant interiors across OMR, Anna Nagar, and Velachery.</p>
+          </div>
+          <div class="city-item">
+            <h3>Pune</h3>
+            <p>Contemporary homes in Hinjewadi, Baner, and Kharadi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG / DESIGN NOTES -->
+    <section class="section section-light" id="blog">
+      <div class="container">
+        <header class="section-header">
+          <h2>Design Notes by Vynex</h2>
+          <p>
+            Insights on layouts, materials, and styling from our design team.
+          </p>
+        </header>
+
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-image blog-img-1"></div>
+            <div class="blog-content">
+              <span class="blog-category">Interior Tips</span>
+              <h3>5 Ways to Maximize Storage in Small Bedrooms</h3>
+              <p>Discover clever storage solutions that don't compromise on style.</p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image blog-img-2"></div>
+            <div class="blog-content">
+              <span class="blog-category">Material Guide</span>
+              <h3>Choosing the Right Kitchen Countertop Material</h3>
+              <p>Compare quartz, granite, and marble for your modular kitchen.</p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image blog-img-3"></div>
+            <div class="blog-content">
+              <span class="blog-category">Design Trends</span>
+              <h3>Why Neutral Palettes Are Dominating 2026</h3>
+              <p>Learn how to use warm neutrals for timeless interiors.</p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-cta">
+          <a href="#" class="btn btn-outline">View All Articles</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">About Vynex</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#services">Full Home Interiors</a></li>
+          <li><a href="#services">Modular Kitchens</a></li>
+          <li><a href="#services">Wardrobes</a></li>
+          <li><a href="#services">Living Room Design</a></li>
+          <li><a href="#services">Bedroom Interiors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#faq">Design Guides</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Case Studies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Customer Support</h3>
+        <ul>
+          <li><a href="#trust">Warranty</a></li>
+          <li><a href="#process">Installation</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Book a Visit</a></li>
+          <li><a href="#">Track Your Project</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li>Phone: +91-98765-43210</li>
+          <li>Email: hello@vynex.in</li>
+          <li>Hours: Mon-Sat, 9 AM - 7 PM</li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram" title="Instagram">IG</a>
+          <a href="#" aria-label="Facebook" title="Facebook">FB</a>
+          <a href="#" aria-label="Pinterest" title="Pinterest">PI</a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn">IN</a>
+          <a href="#" aria-label="YouTube" title="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Vynex Interiors. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="public/js/main.js"></script>
+</body>
+</html>
