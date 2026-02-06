@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/gallery.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/gallery.css" />
   </head>
   <body class="gallery-page">
     <header class="header">
@@ -71,13 +71,13 @@
         <div class="gallery-grid" id="galleryGrid">
           <div class="gallery-item" data-category="modern">
             <img
-              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
-              alt="Modern Living Room"
+              src="https://i.pinimg.com/1200x/22/fe/4e/22fe4e1a1410b4917ee74e94d204c479.jpg"
+              alt="Modern Living Room with Accent Wall"
               class="gallery-item-image"
             />
             <div class="gallery-item-info">
-              <h3>Modern Living Room</h3>
-              <p>Clean lines with sleek furniture and contemporary art pieces.</p>
+              <h3>Modern Living Room with Accent Wall</h3>
+              <p>Sleek design with accent wall and organized space. Perfect for contemporary living rooms.</p>
               <div class="gallery-item-tags">
                 <span class="tag">Modern</span>
               </div>
@@ -86,7 +86,7 @@
 
           <div class="gallery-item" data-category="contemporary">
             <img
-              src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg"
+              src="https://i.pinimg.com/1200x/62/10/93/621093ef7f4d3ae9b611492c7b2ebc17.jpg"
               alt="Contemporary Living Room"
               class="gallery-item-image"
             />
@@ -101,7 +101,7 @@
 
           <div class="gallery-item" data-category="luxury">
             <img
-              src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg"
+              src="https://i.pinimg.com/1200x/29/17/30/2917303d34e6f528e92b4d5bdf085d2e.jpg"
               alt="Luxury Living Room"
               class="gallery-item-image"
             />
@@ -116,7 +116,7 @@
 
           <div class="gallery-item" data-category="minimalist">
             <img
-              src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg"
+              src="https://i.pinimg.com/1200x/0e/6b/0c/0e6b0c91cdb23868bfa5aa7c65550213.jpg"
               alt="Minimalist Living Room"
               class="gallery-item-image"
             />
@@ -131,7 +131,7 @@
 
           <div class="gallery-item" data-category="modern luxury">
             <img
-              src="https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg"
+              src="https://i.pinimg.com/1200x/e4/f2/2f/e4f22f5a4cb161874048bee0fe6a5825.jpg"
               alt="Modern Luxury Living Room"
               class="gallery-item-image"
             />
@@ -147,7 +147,7 @@
 
           <div class="gallery-item" data-category="contemporary">
             <img
-              src="https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg"
+              src="https://i.pinimg.com/1200x/ca/0e/d0/ca0ed0b8a23d43359246c2de0f19102e.jpg"
               alt="Contemporary Open Plan"
               class="gallery-item-image"
             />
@@ -193,7 +193,7 @@
 
           <div class="gallery-item" data-category="contemporary">
             <img
-              src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg"
+              src="https://i.pinimg.com/736x/ef/7f/06/ef7f064290e0d14bbe14c31560099a84.jpg"
               alt="Contemporary Family Room"
               class="gallery-item-image"
             />
@@ -238,7 +238,7 @@
           </ul>
         </div>
         <div class="footer-col">
-                    <h3>Services</h3>
+          <h3>Services</h3>
           <ul>
             <li><a href="/#services">Full Home Interiors</a></li>
             <li><a href="/#services">Modular Kitchens</a></li>
@@ -288,103 +288,103 @@
       </div>
     </footer>
 
-    <script type="module" src="../js/gallery.js"></script>
-  </body>
-=======
-  
-  <script>
-    // Gallery Filtering
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    <script>
+      // Gallery Filtering
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
 
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        // Remove active class from all buttons
-        filterBtns.forEach(b => b.classList.remove('active'));
-        // Add active class to clicked button
-        btn.classList.add('active');
+      filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
 
-        const filterValue = btn.getAttribute('data-filter');
+          const filterValue = btn.getAttribute('data-filter');
 
-        galleryItems.forEach(item => {
-          if (filterValue === 'all') {
-            item.style.display = 'block';
-          } else {
-            const itemCategory = item.getAttribute('data-category');
-            if (itemCategory.includes(filterValue)) {
+          galleryItems.forEach((item) => {
+            if (filterValue === 'all') {
               item.style.display = 'block';
             } else {
-              item.style.display = 'none';
+              const itemCategory = item.getAttribute('data-category');
+              if (itemCategory.includes(filterValue)) {
+                item.style.display = 'block';
+              } else {
+                item.style.display = 'none';
+              }
             }
-          }
+          });
         });
       });
-    });
 
-    // Lightbox Functionality
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImage = document.getElementById('lightboxImage');
-    const lightboxClose = document.getElementById('lightboxClose');
-    const lightboxPrev = document.getElementById('lightboxPrev');
-    const lightboxNext = document.getElementById('lightboxNext');
-    let currentImageIndex = 0;
-    let visibleImages = [];
+      // Lightbox Functionality
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightboxImage');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const lightboxPrev = document.getElementById('lightboxPrev');
+      const lightboxNext = document.getElementById('lightboxNext');
+      let currentImageIndex = 0;
+      let visibleImages = [];
 
-    function updateVisibleImages() {
-      visibleImages = Array.from(document.querySelectorAll('.gallery-item:not([style*="display: none"]) .gallery-item-image'));
-    }
-
-    galleryItems.forEach((item, index) => {
-      const img = item.querySelector('.gallery-item-image');
-      if (img) {
-        img.addEventListener('click', () => {
-          updateVisibleImages();
-          currentImageIndex = visibleImages.indexOf(img);
-          openLightbox(img.src, img.alt);
-        });
+      function updateVisibleImages() {
+        visibleImages = Array.from(
+          document.querySelectorAll('.gallery-item:not([style*="display: none"]) .gallery-item-image')
+        );
       }
-    });
 
-    function openLightbox(src, alt) {
-      lightboxImage.src = src;
-      lightboxImage.alt = alt;
-      lightbox.style.display = 'flex';
-    }
+      galleryItems.forEach((item) => {
+        const img = item.querySelector('.gallery-item-image');
+        if (img) {
+          img.addEventListener('click', () => {
+            updateVisibleImages();
+            currentImageIndex = visibleImages.indexOf(img);
+            openLightbox(img.src, img.alt);
+          });
+        }
+      });
 
-    function closeLightbox() {
-      lightbox.style.display = 'none';
-    }
-
-    function showNextImage() {
-      currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
-      openLightbox(visibleImages[currentImageIndex].src, visibleImages[currentImageIndex].alt);
-    }
-
-    function showPrevImage() {
-      currentImageIndex = (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
-      openLightbox(visibleImages[currentImageIndex].src, visibleImages[currentImageIndex].alt);
-    }
-
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightboxNext.addEventListener('click', showNextImage);
-    lightboxPrev.addEventListener('click', showPrevImage);
-
-    // Close lightbox when clicking outside the image
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) {
-        closeLightbox();
+      function openLightbox(src, alt) {
+        lightboxImage.src = src;
+        lightboxImage.alt = alt;
+        lightbox.style.display = 'flex';
       }
-    });
 
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-      if (lightbox.style.display === 'flex') {
-        if (e.key === 'ArrowRight') showNextImage();
-        if (e.key === 'ArrowLeft') showPrevImage();
-        if (e.key === 'Escape') closeLightbox();
+      function closeLightbox() {
+        lightbox.style.display = 'none';
       }
-    });
-  </script>
-</body>
+
+      function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
+        openLightbox(
+          visibleImages[currentImageIndex].src,
+          visibleImages[currentImageIndex].alt
+        );
+      }
+
+      function showPrevImage() {
+        currentImageIndex =
+          (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
+        openLightbox(
+          visibleImages[currentImageIndex].src,
+          visibleImages[currentImageIndex].alt
+        );
+      }
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxNext.addEventListener('click', showNextImage);
+      lightboxPrev.addEventListener('click', showPrevImage);
+
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (lightbox.style.display === 'flex') {
+          if (e.key === 'ArrowRight') showNextImage();
+          if (e.key === 'ArrowLeft') showPrevImage();
+          if (e.key === 'Escape') closeLightbox();
+        }
+      });
+    </script>
+  </body>
 </html>
-
