@@ -1,5 +1,2 @@
-# Pricing Section Update Tasks
-
-- [x] index.html: Replace the existing pricing section with the provided HTML (excluding <style> and <script> tags).
-- [x] public/css/styles.css: Update pricing CSS to match the provided <style>, remove dots-related styles.
-- [x] public/js/main.js: Replace the estimate scroller JavaScript with the provided <script> content, remove dots code.
+- [x] Replace the <head> section in index.html with the corrected version (update favicon and stylesheet paths to root paths, fix favicon type, remove trailing period)
+- [x] Change the bottom script src from "public/js/main.js" to "/js/main.js"
