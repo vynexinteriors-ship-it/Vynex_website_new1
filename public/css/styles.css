@@ -170,9 +170,28 @@ p {
 .logo-wrap {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
+/* NEW: logo layout */
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-image {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/* word “VYNEX” */
 .logo-text {
   font-size: 1.3rem;
   font-family: "Playfair Display", serif;
@@ -180,6 +199,15 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   color: var(--vynex-navy);
+}
+
+/* word “Interiors” under VYNEX */
+.logo-subtext {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--vynex-muted);
+  margin-left: 0.2rem;   /* tweak: 0.2–0.4rem as you like */
 }
 
 .nav {
